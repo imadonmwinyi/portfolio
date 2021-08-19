@@ -1,0 +1,211 @@
+﻿@model MessageViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="banner">
+
+    <div class="profile">
+        <img src="~/image/backend-1-image.jpg" class="profile-banner" />
+        <div class="overlay"></div>
+
+        <div class="profile-banner-info">
+            <div class="profile-info-box">
+                <img src="~/image/my_pics.jpg" class="avatar" />
+
+                <div class="profile-intro">
+                    <span class="d-block"> Osazee Imadonmwinyi</span>
+                    <p class="intro-desc">Value-Driven .NET Software Engineer</p>
+                </div>
+
+                <div class="wrapper-contact-me"><a href="#Contact" class="contact-me">Contact Me</a></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+@if (ViewBag.Success == true)
+{
+    <div class="alert alert-success m-3" role="alert">
+        Thank You! I will get back to you as Soon as Possible
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<div class="container">
+    <section id="Project" class="mt-5">
+        <h2 class="mt-4 mb-4 text-center">Project</h2>
+        <div class="projects-wrapper">
+            <div class="card project-card">
+                <img class="card-img-top" src="~/image/animalfarm_p.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title primary-color">Livestock Farms</h4>
+                    <p class="card-text">
+                        An E-commerce Platform for Livestock. Registered Agents upload
+                        livestock for sale. Customers can buy livestock, make payment and track
+                        Orders. DeliveryPerson Accept Assignment and Add tracking information
+                    </p>
+                    <a href="https://animalfarmsmarketcore20210728103813.azurewebsites.net/" target="_blank" class="a-button mt-3 mb-3 d-inline-block">See Project</a>
+                </div>
+            </div>
+            <div class="card project-card" >
+                <img class="card-img-top" src="~/image/contactApp_p.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title  primary-color">E-Library</h4>
+                    <p class="card-text">
+                        An application where users can register and have access to a wide range
+                        of books available on the website.
+                        Technologies Used - ASP.Net Core MVC and API, Entity Framework
+                        Core, SQLite, Bootstrap
+                    </p>
+                    <a href="http://tolu-e-library.herokuapp.com/" target="_blank" class="a-button mt-3 mb-3 d-inline-block">See Project</a>
+                </div>
+            </div>
+            <div class="card project-card" >
+                <img class="card-img-top " src="~/image/winform2_p.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title primary-color">BankApp-Simulated</h4>
+                    <p class="card-text">
+                        A standalone windows application that simulates bank operations
+                        including Multiple Account opening, Cash Deposit, Transfer and Withdrawal.
+                        Technologies Used - C#, .Net Core, Winforms and SQLite.
+                    </p>
+                    <a href="https://github.com/imadonmwinyi/BankApp" target="_blank" class="a-button mt-3 mb-3 d-inline-block">See Project</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="Experience" style="margin:3em 0em">
+        <h2 class="mt-4 mb-4 text-center">Experience</h2>
+
+        <div class="subheading mb-3 primary-color"><h3>Programming Languages & Tools</h3></div>
+        <ul class="list-inline dev-icons">
+            <li class="list-inline-item">C#,</li>
+            <li class="list-inline-item">ASP.NET Core MVC,</li>
+            <li class="list-inline-item">ASP.NET Core API,</li>
+            <li class="list-inline-item">Entity Framework,</li>
+            <li class="list-inline-item">MSSQL,</li>
+            <li class="list-inline-item">SQLite,</li>
+            <li class="list-inline-item">MySQL,</li>
+            <li class="list-inline-item">Python,</li>
+            <li class="list-inline-item">JavaScript,</li>
+            <li class="list-inline-item">PHP,</li>
+            <li class="list-inline-item">Jira</li>
+        </ul>
+
+        <div class="subheading mb-3 primary-color"><h3>Workflow</h3></div>
+        <ul class="fa-ul mb-0">
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Agile Development & Scrum
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Mobile-First, Responsive Design
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Cross Browser Testing & Debugging
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Cross Functional Teams
+            </li>
+
+        </ul>
+    </section>
+
+    <section id="Contact" style="margin:3em 0em">
+        <h2 class="mt-4 mb-4 text-center">Contact Me</h2>
+
+
+        <div class="contact">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="contact-info">
+                        <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
+                        <h2>Contact Me</h2>
+                        <h4>I would love to hear from you!</h4>
+                    </div>
+                    <div class="social d-flex p-5">
+                        <div class="pr-2">
+                            <a href="https://github.com/imadonmwinyi/" target="_blank" class="text-black-50 " style="font-size:1.9em"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="pl-2">
+                            <a href="https://www.linkedin.com/in/osazee-imadonmwinyi-1b5695197/" target="_blank" class="text-black-50" style="font-size:1.9em"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="contact-form">
+                        <form asp-controller="Home" asp-action="Message" method="post">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" asp-for="FirstName">First Name:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="fname" asp-for="FirstName" placeholder="Enter First Name">
+                                </div>
+                                <small class="mb-1 text-danger"><span asp-validation-for="FirstName"></span></small>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" asp-for="LastName">Last Name:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" asp-for="LastName" placeholder="Enter Last Name">
+                                </div>
+                                <small class="mb-1 text-danger"><span asp-validation-for="LastName"></span></small>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" asp-for="Email">Email:</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" asp-for="Email" placeholder="Enter email">
+                                </div>
+                                <small class="mb-1 text-danger"><span asp-validation-for="Email"></span></small>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" asp-for="Subject">Subject:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" asp-for="Subject" placeholder="Enter Subject">
+                                </div>
+                                <small class="mb-1 ml-3 text-danger"><span asp-validation-for="Subject"></span></small>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" asp-for="Comment">Message:</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="5" asp-for="Comment"></textarea>
+                                </div>
+                                <small class="mb-1 ml-3 text-danger"><span asp-validation-for="Comment"></span></small>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="py-2 px-5">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            @*<div class="social-mobile">
+                <div class="pr-2">
+                    <a href="https://github.com/imadonmwinyi/" target="_blank" class="text-black-50 " style="font-size:1.9em"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="pl-2">
+                    <a href="https://www.linkedin.com/in/osazee-imadonmwinyi-1b5695197/" target="_blank" class="text-black-50" style="font-size:1.9em"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>*@
+        </div>
+    </section>
+
+</div>
+
+@section scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+
+
+
